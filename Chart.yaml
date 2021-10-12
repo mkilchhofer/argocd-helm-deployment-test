@@ -1,0 +1,17 @@
+apiVersion: v2
+name: foo-umbrella
+description: A umbrella Helm chart for Kubernetes
+
+type: application
+version: 0.1.0
+
+dependencies:
+- alias: foo1
+  name: foo
+  repository: "file://subcharts/foo"
+  version: "0.1.0"
+
+- alias: foo2
+  name: foo
+  repository: "file://subcharts/foo"
+  version: "0.1.0"
