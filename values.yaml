@@ -1,4 +1,6 @@
-foo1: {}
+foo1:
+  serviceAccount:
+    create: false
 
 foo2:
   serviceAccount:
